@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiyoon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Mockup Frame Handphone -->
+  <div class="phone-frame">
+    <div class="screen">
+      
+      <!-- Dynamic Island / Notch -->
+      <div class="notch"></div>
+
+      <!-- Status Bar (Jam & Baterai Realtime) -->
+      <div class="status-bar">
+        <span id="clock">19:00</span>
+        <div class="status-icons">
+          <span>5G</span>
+          <span>🔋 88%</span>
+        </div>
+      </div>
+
+      <!-- Banner Notifikasi Popup -->
+      <div class="notification-banner" id="notifBanner">
+        <div class="notif-title">💬 Message from Jimin ❤️</div>
+        <div class="notif-text" id="notifText">Ada pesan baru!</div>
+      </div>
+
+      <!-- Header Chat -->
+      <div class="chat-header">
+        <div class="avatar" id="avatarBtn">JM</div>
+        <div class="user-info">
+          <div class="name">Park Jimin (지민) ❤️</div>
+          <div class="status">Online • Gangnam, Seoul</div>
+        </div>
+      </div>
+
+      <!-- Meteran Hubungan / Affection Bar -->
+      <div class="affection-bar">
+        <span>Tingkat Kedekatan:</span>
+        <div class="progress-bg">
+          <div class="progress-fill" id="affectionFill" style="width: 50%;"></div>
+        </div>
+        <span id="affectionText">50%</span>
+      </div>
+
+      <!-- Area Pesan / Chat Body -->
+      <div class="chat-body" id="chatBody">
+        <div class="message other">
+          Kamu udah nyampe Hongdae belum? Aku udah nunggu di café biasa nih ☕
+          <div class="time-stamp">19:00</div>
+        </div>
+      </div>
+
+      <!-- Typing Indicator (Indikator Sedang Mengetik) -->
+      <div class="typing-indicator" id="typingIndicator">
+        <span></span><span></span><span></span>
+        <small>Jimin sedang mengetik...</small>
+      </div>
+
+      <!-- Interactive Choice Buttons -->
+      <div class="interactive-area" id="interactiveArea">
+        <button class="choice-btn" onclick="sendMessage('Bentar lagi nyampe! Macet banget jalanan Seoul malam ini 😭', 1)">
+          1. "Bentar lagi nyampe! Macet banget..."
+        </button>
+        <button class="choice-btn" onclick="sendMessage('Aku udah di depan! Kamu duduk di sebelah mana?', 2)">
+          2. "Aku udah di depan! Kamu di mana?"
+        </button>
+      </div>
+
+      <!-- Footer Action Bar -->
+      <div class="phone-footer">
+        <button class="action-btn" onclick="resetStory()">🔄 Restart AU</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
